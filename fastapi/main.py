@@ -22,11 +22,20 @@ def read_root(request: Request):
         request=request, name="index.html"
     )
 
+@app.get("/fincher", response_class=HTMLResponse)
+async def test(request: Request):
+     return templates.TemplateResponse(
+         request=request, name="fincher.html"                                                    
+     )
 
-# @app.get("/test", response_class=HTMLResponse)
-# async def test(request: Request):
-#     return templates.TemplateResponse(
-#         request=request, name="index.html"                                                    
-#     )
+@app.get("/scorsese", response_class=HTMLResponse)
+async def test(request: Request):
+     return templates.TemplateResponse(
+         request=request, name="scorsese.html"                                                    
+     )
 
-
+@app.get("/tarantino", response_class=HTMLResponse)
+async def test(request: Request):
+     return templates.TemplateResponse(
+         request=request, name="tarantino.html"                                                    
+     )

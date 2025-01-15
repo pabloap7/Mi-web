@@ -39,3 +39,21 @@ async def test(request: Request):
      return templates.TemplateResponse(
          request=request, name="tarantino.html"                                                    
      )
+
+@app.get("/villeneuve", response_class=HTMLResponse)
+async def test(request: Request):
+     return templates.TemplateResponse(
+         request=request, name="villeneuve.html"                                                    
+     )
+
+@app.get("/spielberg", response_class=HTMLResponse)
+async def test(request: Request):
+     return templates.TemplateResponse(
+         request=request, name="spielberg.html"                                                    
+     )
+
+@app.get("/coppola", response_class=HTMLResponse)
+async def test(request: Request):
+     return templates.TemplateResponse(
+         request=request, name="coppola.html"                                                    
+     )

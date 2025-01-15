@@ -17,14 +17,16 @@ templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/")
-def read_root():
-    return {"Hello": "Worldd"}
-
-
-@app.get("/test", response_class=HTMLResponse)
-async def test(request: Request):
+def read_root(request: Request):
     return templates.TemplateResponse(
-        request=request, name="index.html"                                                    
+        request=request, name="index.html"
     )
+
+
+# @app.get("/test", response_class=HTMLResponse)
+# async def test(request: Request):
+#     return templates.TemplateResponse(
+#         request=request, name="index.html"                                                    
+#     )
 
 

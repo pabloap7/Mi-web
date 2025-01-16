@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
-    <script src="../static/js/javascript.js"></script>
+    <script src="{{ url_for('static', path='js/javascript.js') }}"></script>
     <title>Filmografía de Martin Scorsese</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
                 <h2>Filmografía</h2>
                 <ul class="filmografia-lista">
                     <li>
-                        <img src="../static/img/GOODFELLAS.jpg" alt="Goodfellas">
+                        <img src="{{ url_for('static', path='img/GOODFELLAS.jpg') }}" alt="Goodfellas">
                         <div class="film-info">
                             <h3>Goodfellas (1990)</h3>
                             <p>La ascensión y caída de Henry Hill y su vida en el mundo del crimen organizado, donde la lealtad y la traición se entrelazan en un relato inolvidable.</p>
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/TAXI DRIVER.jpg" alt="Taxi Driver">
+                        <img src="{{ url_for('static', path='img/TAXI DRIVER.jpg') }}" alt="Taxi Driver">
                         <div class="film-info">
                             <h3>Taxi Driver (1976)</h3>
                             <p>Travis Bickle, un taxista solitario, lucha contra su aislamiento en la sombría ciudad de Nueva York, donde sus conflictos internos lo llevan al borde del abismo.</p>
@@ -58,7 +58,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/THE IRISHMAN.jpg" alt="The Irishman">
+                        <img src="{{ url_for('static', path='img/THE IRISHMAN.jpg') }}" alt="The Irishman">
                         <div class="film-info">
                             <h3>The Irishman (2019)</h3>
                             <p>La historia épica de Frank Sheeran, un asesino a sueldo, y su conexión con el sindicato de camioneros y el notorio Jimmy Hoffa.</p>

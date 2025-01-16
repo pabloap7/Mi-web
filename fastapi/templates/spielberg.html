@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
-    <script src="../static/js/javascript.js"></script>
+    <script src="{{ url_for('static', path='js/javascript.js') }}"></script>
     <title>Filmografía de Steven Spielberg</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
                 <h2>Filmografía</h2>
                 <ul class="filmografia-lista">
                     <li>
-                        <img src="../static/img/JURASSIC PARK.jpg" alt="Jurassic Park">
+                        <img src="{{ url_for('static', path='img/JURASSIC PARK.jpg') }}" alt="Jurassic Park">
                         <div class="film-info">
                             <h3>Jurassic Park (1993)</h3>
                             <p>Un parque de dinosaurios revive a las criaturas prehistóricas, pero la situación se sale de control cuando los animales se escapan.</p>
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/LA LISTA DE SCHINDLER.jpg" alt="La lista de Schindler">
+                        <img src="{{ url_for('static', path='img/LA LISTA DE SCHINDLER.jpg') }}" alt="La lista de Schindler">
                         <div class="film-info">
                             <h3>La lista de Schindler (1993)</h3>
                             <p>Basada en hechos reales, cuenta la historia de Oskar Schindler, quien salvó a más de mil judíos durante el Holocausto.</p>
@@ -58,7 +58,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/SALVAR AL SOLDADO RYAN.jpg" alt="Salvar al Soldado Ryan">
+                        <img src="{{ url_for('static', path='img/SALVAR AL SOLDADO RYAN.jpg') }}" alt="Salvar al Soldado Ryan">
                         <div class="film-info">
                             <h3>Salvar al Soldado Ryan (1998)</h3>
                             <p>Un grupo de soldados es enviado a Francia para encontrar y traer de vuelta a un paracaidista cuya familia ha perdido a todos sus hermanos en combate.</p>
@@ -66,7 +66,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/INDIANA JONES.jpg" alt="Indiana Jones">
+                        <img src="{{ url_for('static', path='img/INDIANA JONES.jpg') }}" alt="Indiana Jones">
                         <div class="film-info">
                             <h3>Indiana Jones: En busca del arca perdida (1981)</h3>
                             <p>El arqueólogo y aventurero Indiana Jones se embarca en una misión para encontrar el Arca de la Alianza, mientras enfrenta a los nazis.</p>
@@ -74,7 +74,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/E.T. EL EXTRATERRESTRE.jpg" alt="E.T. El Extraterrestre">
+                        <img src="{{ url_for('static', path='img/E.T. EL EXTRATERRESTRE.jpg') }}" alt="E.T. El Extraterrestre">
                         <div class="film-info">
                             <h3>E.T. El Extraterrestre (1982)</h3>
                             <p>Un niño hace amistad con un extraterrestre que accidentalmente ha quedado varado en la Tierra, y juntos tratan de ayudarlo a regresar a su planeta.</p>

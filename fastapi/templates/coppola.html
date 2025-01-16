@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
-    <script src="../static/js/javascript.js"></script>
+    <script src="{{ url_for('static', path='js/javascript.js') }}"></script>
     <title>Filmografía de Francis Ford Coppola</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
                 <h2>Filmografía</h2>
                 <ul class="filmografia-lista">
                     <li>
-                        <img src="../static/img/EL PADRINO.jpg" alt="El Padrino">
+                        <img src="{{ url_for('static', path='img/EL PADRINO.jpg') }}" alt="El Padrino">
                         <div class="film-info">
                             <h3>El Padrino (1972)</h3>
                             <p>La historia de la familia Corleone, una de las más poderosas del crimen organizado en Nueva York.</p>
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/EL PADRINO PARTE II.jpeg" alt="El Padrino Parte II">
+                        <img src="{{ url_for('static', path='img/EL PADRINO PARTE II.jpeg') }}" alt="El Padrino Parte II">
                         <div class="film-info">
                             <h3>El Padrino Parte II (1974)</h3>
                             <p>La continuación de la saga de los Corleone, con un enfoque en la ascensión de Michael Corleone y los orígenes de su padre Vito Corleone.</p>
@@ -58,7 +58,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/APOCALYPSE NOW.jpg" alt="Apocalypse Now">
+                        <img src="{{ url_for('static', path='img/APOCALYPSE NOW.jpg') }}" alt="Apocalypse Now">
                         <div class="film-info">
                             <h3>Apocalypse Now (1979)</h3>
                             <p>Un capitán es enviado a la jungla de Vietnam para asesinar a un coronel renegado que ha establecido su propio imperio.</p>
@@ -66,7 +66,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/THE CONVERSATION.jpg" alt="The Conversation">
+                        <img src="{{ url_for('static', path='img/THE CONVERSATION.jpg') }}" alt="The Conversation">
                         <div class="film-info">
                             <h3>The Conversation (1974)</h3>
                             <p>Un especialista en vigilancia se ve envuelto en un caso que lo hace cuestionar sus propias acciones.</p>
@@ -74,7 +74,7 @@
                     </div>
                     </li>
                     <li>
-                        <img src="../static/img/DRACULA.jpg" alt="Drácula de Bram Stoker">
+                        <img src="{{ url_for('static', path='img/DRACULA.jpg') }}" alt="Drácula de Bram Stoker">
                         <div class="film-info">
                             <h3>Drácula (1992)</h3>
                             <p>Una adaptación de la famosa novela de Bram Stoker sobre el conde Drácula y su intento de conquistar Londres.</p>

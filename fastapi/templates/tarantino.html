@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
-    <script src="../static/js/javascript.js"></script>
+    <script src="{{ url_for('static', path='js/javascript.js') }}"></script>
     <title>Filmografía de Tarantino</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
                 <h2>Filmografía</h2>
                 <ul class="filmografia-lista">
                     <li>
-                        <img src="../static/img/RESERVOIR DOGS.jpg" alt="Reservoir Dogs">
+                        <img src="{{ url_for('static', path='img/RESERVOIR DOGS.jpg') }}" alt="Reservoir Dogs">
                         <div class="film-info">
                             <h3>Reservoir Dogs (1992)</h3>
                             <p>Un grupo de criminales intenta llevar a cabo el robo perfecto, pero las cosas no salen según lo planeado.</p>
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/PULP FICTION.jpg" alt="Pulp Fiction">
+                        <img src="{{ url_for('static', path='img/PULP FICTION.jpg') }}" alt="Pulp Fiction">
                         <div class="film-info">
                             <h3>Pulp Fiction (1994)</h3>
                             <p>Historias entrelazadas de crimen, redención y destino en el submundo de Los Ángeles.</p>
@@ -58,7 +58,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/KILL BILL.jpg" alt="Kill Bill: Volumen 1">
+                        <img src="{{ url_for('static', path='img/KILL BILL.jpg') }}" alt="Kill Bill: Volumen 1">
                         <div class="film-info">
                             <h3>Kill Bill: Volumen 1 (2003)</h3>
                             <p>La Novia comienza su sangrienta búsqueda de venganza contra quienes la traicionaron.</p>
@@ -66,7 +66,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="../static/img/INGLOURIOUS BASTERDS.jpg" alt="Bastardos sin gloria">
+                        <img src="{{ url_for('static', path='img/INGLOURIOUS BASTERDS.jpg') }}" alt="Bastardos sin gloria">
                         <div class="film-info">
                             <h3>Bastardos sin gloria (2009)</h3>
                             <p>Un grupo de soldados judíos planea acabar con los nazis en la Francia ocupada durante la Segunda Guerra Mundial.</p>
@@ -74,7 +74,7 @@
                     </div>
                     </li>
                     <li>
-                        <img src="../static/img/ONCE UPON A TIME IN HOLLYWOOD.jpg" alt="Había una vez en Hollywood">
+                        <img src="{{ url_for('static', path='img/ONCE UPON A TIME IN HOLLYWOOD.jpg') }}" alt="Había una vez en Hollywood">
                         <div class="film-info">
                             <h3>Había una vez en Hollywood (2019)</h3>
                             <p>Un actor en declive y su doble de riesgo intentan adaptarse a los cambios de la industria del cine en 1969.</p>

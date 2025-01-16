@@ -17,43 +17,43 @@ templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/")
-def read_root(request: Request):
+def index(request: Request):
     return templates.TemplateResponse(
         request=request, name="index.html"
     )
 
 @app.get("/fincher", response_class=HTMLResponse)
-async def test(request: Request):
+async def fincher(request: Request):
      return templates.TemplateResponse(
          request=request, name="fincher.html"                                                    
      )
 
 @app.get("/scorsese", response_class=HTMLResponse)
-async def test(request: Request):
+async def scorsese(request: Request):
      return templates.TemplateResponse(
          request=request, name="scorsese.html"                                                    
      )
 
 @app.get("/tarantino", response_class=HTMLResponse)
-async def test(request: Request):
+async def tarantino(request: Request):
      return templates.TemplateResponse(
          request=request, name="tarantino.html"                                                    
      )
 
 @app.get("/villeneuve", response_class=HTMLResponse)
-async def test(request: Request):
+async def villenueve(request: Request):
      return templates.TemplateResponse(
          request=request, name="villeneuve.html"                                                    
      )
 
 @app.get("/spielberg", response_class=HTMLResponse)
-async def test(request: Request):
+async def spielberg(request: Request):
      return templates.TemplateResponse(
          request=request, name="spielberg.html"                                                    
      )
 
 @app.get("/coppola", response_class=HTMLResponse)
-async def test(request: Request):
+async def coppola(request: Request):
      return templates.TemplateResponse(
          request=request, name="coppola.html"                                                    
      )

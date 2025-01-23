@@ -1,6 +1,12 @@
+from data.database import database
+from data.modelo.director import Director
+from data.dao.dao_directores import DaoDirectores
+
+from typing import Annotated
+
 from typing import Union
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Form
 
 
 from fastapi.responses import HTMLResponse
@@ -14,7 +20,28 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
 
+@app.get("/directores")
+def get_directores(request: Request, nombre: str = "pepe", otro: int = 1):
+    directores = DaoDirectores().get_all(database)
+    return templates.TemplateResponse(
+        request=request, name="directores.html", context={"directores": directores, "nombre": nombre}
+    )
 
+@app.post("/add_director", response_class=HTMLResponse)
+def add_director(request: Request, nombre: Annotated[str, Form()]):
+    DaoDirectores().add_director(database, nombre)
+    directores = DaoDirectores().get_all(database)
+    return templates.TemplateResponse(
+        "directores.html", {"request": request, "directores": directores}
+    )
+
+@app.post("/delete_director", response_class=HTMLResponse)
+def delete_director(request: Request, id: Annotated[int, Form()]):
+    DaoDirectores().delete_director(database, id)
+    directores = DaoDirectores().get_all(database)
+    return templates.TemplateResponse(
+        "directores.html", {"request": request, "directores": directores}
+    )
 
 @app.get("/")
 def index(request: Request):

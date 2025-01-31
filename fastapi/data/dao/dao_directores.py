@@ -16,7 +16,7 @@ class DaoDirectores:
     def add_director(self, db, nombre: str):
         cursor = db.cursor()
         
-        # Obtener el último id y calcular el siguiente id
+        # Calcular el id
         cursor.execute("SELECT MAX(id) FROM directores")
         last_id = cursor.fetchone()[0]
         next_id = last_id + 1 if last_id is not None else 1
